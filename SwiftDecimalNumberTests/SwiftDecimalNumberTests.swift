@@ -11,26 +11,89 @@ import XCTest
 
 class SwiftDecimalNumberTests: XCTestCase {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testEquality() {
+        
+        let a = NSDecimalNumber(string: "10000")
+        let b = NSDecimalNumber(integer: 10000)
+        
+        XCTAssertTrue(a == b)
+        
     }
     
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
+    func testGreaterThan() {
+        
+        let a = NSDecimalNumber(string: "10000")
+        let b = NSDecimalNumber(integer: 5000)
+        
+        XCTAssertTrue(a > b)
+        
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testLessThan() {
+        
+        let a = NSDecimalNumber(string: "4999.99")
+        let b = NSDecimalNumber(integer: 5000)
+        
+        XCTAssertTrue(a < b)
+        
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
-        }
+    func testAddition() {
+        
+        let a = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(string: "4999.99")
+        let c = NSDecimalNumber(string: "9999.99")
+        
+        XCTAssertEqual(a + b, c)
+        
+    }
+    
+    func testSubtraction() {
+        
+        let a = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(string: "4999.99")
+        let c = NSDecimalNumber(string: "0.01")
+        
+        XCTAssertEqual(a - b, c)
+    }
+    
+    func testMultiplication() {
+        
+        let a = NSDecimalNumber(string: "0.2")
+        let b = NSDecimalNumber(string: "0.05")
+        let c = NSDecimalNumber(string: "0.01")
+        
+        
+        XCTAssertEqual(a * b, c)
+        
+    }
+    
+    func testDivision() {
+        
+        let a = NSDecimalNumber(string: "0.2")
+        let b = NSDecimalNumber(string: "0.5")
+        let c = NSDecimalNumber(string: "0.4")
+        
+        XCTAssertEqual(a / b, c)
+        
+    }
+    
+    func testMin() {
+        
+        let a = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(string: "4999.99")
+        
+        XCTAssertEqual(min(a, b), b)
+        
+    }
+    
+    func testMax() {
+        
+        let a = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(string: "4999.99")
+        
+        XCTAssertEqual(max(a, b), a)
+        
     }
     
 }

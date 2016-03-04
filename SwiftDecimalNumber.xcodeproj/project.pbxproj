@@ -10,6 +10,10 @@
 		17F0970A1C8983DF0070D6CF /* SwiftDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 17F097091C8983DF0070D6CF /* SwiftDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17F097111C8983DF0070D6CF /* SwiftDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F097061C8983DF0070D6CF /* SwiftDecimalNumber.framework */; };
 		17F097161C8983DF0070D6CF /* SwiftDecimalNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F097151C8983DF0070D6CF /* SwiftDecimalNumberTests.swift */; };
+		17F097211C89842F0070D6CF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 17F097201C89842F0070D6CF /* Podfile */; };
+		17F097231C8984670070D6CF /* SwiftDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */; };
+		17F097251C8A34900070D6CF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 17F097241C8A34900070D6CF /* LICENSE */; };
+		17F097271C8A34A20070D6CF /* SwiftDecimalNumber.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +33,10 @@
 		17F097101C8983DF0070D6CF /* SwiftDecimalNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDecimalNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F097151C8983DF0070D6CF /* SwiftDecimalNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDecimalNumberTests.swift; sourceTree = "<group>"; };
 		17F097171C8983DF0070D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17F097201C89842F0070D6CF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDecimalNumber.swift; sourceTree = "<group>"; };
+		17F097241C8A34900070D6CF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftDecimalNumber.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,9 @@
 		17F096FC1C8983DF0070D6CF = {
 			isa = PBXGroup;
 			children = (
+				17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */,
+				17F097241C8A34900070D6CF /* LICENSE */,
+				17F097201C89842F0070D6CF /* Podfile */,
 				17F097081C8983DF0070D6CF /* SwiftDecimalNumber */,
 				17F097141C8983DF0070D6CF /* SwiftDecimalNumberTests */,
 				17F097071C8983DF0070D6CF /* Products */,
@@ -71,6 +82,7 @@
 		17F097081C8983DF0070D6CF /* SwiftDecimalNumber */ = {
 			isa = PBXGroup;
 			children = (
+				17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */,
 				17F097091C8983DF0070D6CF /* SwiftDecimalNumber.h */,
 				17F0970B1C8983DF0070D6CF /* Info.plist */,
 			);
@@ -179,6 +191,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F097251C8A34900070D6CF /* LICENSE in Resources */,
+				17F097271C8A34A20070D6CF /* SwiftDecimalNumber.podspec in Resources */,
+				17F097211C89842F0070D6CF /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F097231C8984670070D6CF /* SwiftDecimalNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +326,7 @@
 		17F0971B1C8983DF0070D6CF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +337,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.swift.SwiftDecimalNumber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		17F0971C1C8983DF0070D6CF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +397,7 @@
 				17F0971C1C8983DF0070D6CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		17F0971D1C8983DF0070D6CF /* Build configuration list for PBXNativeTarget "SwiftDecimalNumberTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +406,7 @@
 				17F0971F1C8983DF0070D6CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
