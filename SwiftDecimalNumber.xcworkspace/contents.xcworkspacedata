@@ -4,4 +4,10 @@
    <FileRef
       location = "container:SwiftDecimalNumber.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:SwiftDecimalNumber.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

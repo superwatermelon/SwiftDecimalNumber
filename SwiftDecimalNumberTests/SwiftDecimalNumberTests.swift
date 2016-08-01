@@ -78,6 +78,16 @@ class SwiftDecimalNumberTests: XCTestCase {
         
     }
     
+    func testSquare() {
+        
+        let a = NSDecimalNumber(string: "0.2")
+        let b = 2
+        let c = NSDecimalNumber(string: "0.04")
+        
+        XCTAssertEqual(a ** b, c)
+        
+    }
+    
     func testMin() {
         
         let a = NSDecimalNumber(integer: 5000)

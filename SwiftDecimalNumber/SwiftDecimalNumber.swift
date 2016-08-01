@@ -10,28 +10,34 @@ import Foundation
 
 extension NSDecimalNumber: Comparable {}
 
-public func ==(left: NSDecimalNumber, right: NSDecimalNumber) -> Bool {
+public func == (left: NSDecimalNumber, right: NSDecimalNumber) -> Bool {
     return left.compare(right) == .OrderedSame
 }
 
-public func <(left: NSDecimalNumber, right: NSDecimalNumber) -> Bool {
+public func < (left: NSDecimalNumber, right: NSDecimalNumber) -> Bool {
     return left.compare(right) == .OrderedAscending
 }
 
-public func +(left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
+public func + (left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
     return left.decimalNumberByAdding(right)
 }
 
-public func -(left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
+public func - (left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
     return left.decimalNumberBySubtracting(right)
 }
 
-public func *(left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
+public func * (left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
     return left.decimalNumberByMultiplyingBy(right)
 }
 
-public func /(left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
+public func / (left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
     return left.decimalNumberByDividingBy(right)
+}
+
+infix operator ** { associativity left precedence 200 }
+
+public func ** (left: NSDecimalNumber, right: Int) -> NSDecimalNumber {
+    return left.decimalNumberByRaisingToPower(right)
 }
 
 public func min(left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
