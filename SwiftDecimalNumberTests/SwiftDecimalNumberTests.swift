@@ -14,7 +14,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testEqualityWhenEqual() {
 
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 10000)
+        let b = NSDecimalNumber(value: 10000 as Int)
 
         XCTAssertTrue(a == b)
 
@@ -23,7 +23,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testEqualityWhenNotEqual() {
 
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(value: 5000 as Int)
 
         XCTAssertFalse(a == b)
 
@@ -32,7 +32,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testInequalityWhenEqual() {
 
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 10000)
+        let b = NSDecimalNumber(value: 10000 as Int)
         
         XCTAssertFalse(a != b)
         
@@ -41,7 +41,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testInequalityWhenNotEqual() {
         
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(value: 5000 as Int)
         
         XCTAssertTrue(a != b)
     
@@ -50,7 +50,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testGreaterThan() {
 
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(value: 5000 as Int)
 
         XCTAssertTrue(a > b)
         XCTAssertFalse(b > a)
@@ -60,7 +60,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testLessThan() {
 
         let a = NSDecimalNumber(string: "4999.99")
-        let b = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(value: 5000 as Int)
 
         XCTAssertTrue(a < b)
         XCTAssertFalse(b < a)
@@ -70,7 +70,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testGreaterThanOrEqualWhenGreater() {
 
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(value: 5000 as Int)
 
         XCTAssertTrue(a >= b)
         XCTAssertFalse(b >= a)
@@ -80,7 +80,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testGreaterThanOrEqualWhenEqual() {
 
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 10000)
+        let b = NSDecimalNumber(value: 10000 as Int)
 
         XCTAssertTrue(a >= b)
         XCTAssertTrue(b >= a)
@@ -90,7 +90,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testLessThanOrEqualWhenGreater() {
         
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 5000)
+        let b = NSDecimalNumber(value: 5000 as Int)
         
         XCTAssertFalse(a <= b)
         XCTAssertTrue(b <= a)
@@ -100,7 +100,7 @@ class SwiftDecimalNumberTests: XCTestCase {
     func testLessThanOrEqualWhenEqual() {
         
         let a = NSDecimalNumber(string: "10000")
-        let b = NSDecimalNumber(integer: 10000)
+        let b = NSDecimalNumber(value: 10000 as Int)
         
         XCTAssertTrue(a <= b)
         XCTAssertTrue(b <= a)
@@ -109,7 +109,7 @@ class SwiftDecimalNumberTests: XCTestCase {
 
     func testAddition() {
 
-        let a = NSDecimalNumber(integer: 5000)
+        let a = NSDecimalNumber(value: 5000 as Int)
         let b = NSDecimalNumber(string: "4999.99")
         let c = NSDecimalNumber(string: "9999.99")
 
@@ -119,11 +119,11 @@ class SwiftDecimalNumberTests: XCTestCase {
 
     func testSubtraction() {
 
-        let a = NSDecimalNumber(integer: 5000)
+        let a = NSDecimalNumber(value: 5000 as Int)
         let b = NSDecimalNumber(string: "4999.99")
         let c = NSDecimalNumber(string: "0.01")
 
-        XCTAssertEqual(a - b, c)
+        XCTAssertEqual((a as Decimal) - (b as Decimal), c as Decimal)
     }
 
     func testMultiplication() {
@@ -133,7 +133,7 @@ class SwiftDecimalNumberTests: XCTestCase {
         let c = NSDecimalNumber(string: "0.01")
 
 
-        XCTAssertEqual(a * b, c)
+        XCTAssertEqual((a as Decimal) * (b as Decimal), c as Decimal)
 
     }
 
@@ -143,7 +143,7 @@ class SwiftDecimalNumberTests: XCTestCase {
         let b = NSDecimalNumber(string: "0.5")
         let c = NSDecimalNumber(string: "0.4")
 
-        XCTAssertEqual(a / b, c)
+        XCTAssertEqual((a as Decimal) / (b as Decimal), c as Decimal)
 
     }
 
@@ -159,7 +159,7 @@ class SwiftDecimalNumberTests: XCTestCase {
 
     func testMin() {
 
-        let a = NSDecimalNumber(integer: 5000)
+        let a = NSDecimalNumber(value: 5000 as Int)
         let b = NSDecimalNumber(string: "4999.99")
 
         XCTAssertEqual(min(a, b), b)
@@ -168,7 +168,7 @@ class SwiftDecimalNumberTests: XCTestCase {
 
     func testMax() {
 
-        let a = NSDecimalNumber(integer: 5000)
+        let a = NSDecimalNumber(value: 5000 as Int)
         let b = NSDecimalNumber(string: "4999.99")
 
         XCTAssertEqual(max(a, b), a)

@@ -7,4 +7,3 @@ end
 target 'SwiftDecimalNumberTests' do
 
 end
-

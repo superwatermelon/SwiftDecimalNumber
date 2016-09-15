@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17F0970A1C8983DF0070D6CF /* SwiftDecimalNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = 17F097091C8983DF0070D6CF /* SwiftDecimalNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		17F097111C8983DF0070D6CF /* SwiftDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F097061C8983DF0070D6CF /* SwiftDecimalNumber.framework */; };
 		17F097161C8983DF0070D6CF /* SwiftDecimalNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F097151C8983DF0070D6CF /* SwiftDecimalNumberTests.swift */; };
 		17F097211C89842F0070D6CF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 17F097201C89842F0070D6CF /* Podfile */; };
 		17F097231C8984670070D6CF /* SwiftDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */; };
 		17F097251C8A34900070D6CF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 17F097241C8A34900070D6CF /* LICENSE */; };
 		17F097271C8A34A20070D6CF /* SwiftDecimalNumber.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */; };
+		8F96F865A9C3932516BA9A96 /* Pods_SwiftDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E7E402D6879DEFA63DB348 /* Pods_SwiftDecimalNumber.framework */; };
+		E33583AA4CCBD32295556B16 /* Pods_SwiftDecimalNumberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92016D99BB1DFA3BEEC8BC8 /* Pods_SwiftDecimalNumberTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,15 +29,20 @@
 
 /* Begin PBXFileReference section */
 		17F097061C8983DF0070D6CF /* SwiftDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17F097091C8983DF0070D6CF /* SwiftDecimalNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDecimalNumber.h; sourceTree = "<group>"; };
 		17F0970B1C8983DF0070D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17F097101C8983DF0070D6CF /* SwiftDecimalNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDecimalNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F097151C8983DF0070D6CF /* SwiftDecimalNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDecimalNumberTests.swift; sourceTree = "<group>"; };
 		17F097171C8983DF0070D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17F097201C89842F0070D6CF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		17F097201C89842F0070D6CF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDecimalNumber.swift; sourceTree = "<group>"; };
 		17F097241C8A34900070D6CF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftDecimalNumber.podspec; sourceTree = "<group>"; };
+		26F9F1D98D047573C43429B2 /* Pods-SwiftDecimalNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecimalNumber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDecimalNumber/Pods-SwiftDecimalNumber.debug.xcconfig"; sourceTree = "<group>"; };
+		347BB95EFCFB34AA2879583D /* Pods-SwiftDecimalNumberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecimalNumberTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDecimalNumberTests/Pods-SwiftDecimalNumberTests.release.xcconfig"; sourceTree = "<group>"; };
+		37E7E402D6879DEFA63DB348 /* Pods_SwiftDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B85BA0FB19F393ED3E9BE67 /* Pods-SwiftDecimalNumber.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecimalNumber.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDecimalNumber/Pods-SwiftDecimalNumber.release.xcconfig"; sourceTree = "<group>"; };
+		AE44463B77AD8FC2E522D5AD /* Pods-SwiftDecimalNumberTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecimalNumberTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDecimalNumberTests/Pods-SwiftDecimalNumberTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E92016D99BB1DFA3BEEC8BC8 /* Pods_SwiftDecimalNumberTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDecimalNumberTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F96F865A9C3932516BA9A96 /* Pods_SwiftDecimalNumber.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +59,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17F097111C8983DF0070D6CF /* SwiftDecimalNumber.framework in Frameworks */,
+				E33583AA4CCBD32295556B16 /* Pods_SwiftDecimalNumberTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +75,8 @@
 				17F097081C8983DF0070D6CF /* SwiftDecimalNumber */,
 				17F097141C8983DF0070D6CF /* SwiftDecimalNumberTests */,
 				17F097071C8983DF0070D6CF /* Products */,
+				613C34ECE6019BF3A2D37289 /* Pods */,
+				45D93D23D2711FEF10ED2970 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */,
-				17F097091C8983DF0070D6CF /* SwiftDecimalNumber.h */,
 				17F0970B1C8983DF0070D6CF /* Info.plist */,
 			);
 			path = SwiftDecimalNumber;
@@ -98,6 +107,26 @@
 			path = SwiftDecimalNumberTests;
 			sourceTree = "<group>";
 		};
+		45D93D23D2711FEF10ED2970 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				37E7E402D6879DEFA63DB348 /* Pods_SwiftDecimalNumber.framework */,
+				E92016D99BB1DFA3BEEC8BC8 /* Pods_SwiftDecimalNumberTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		613C34ECE6019BF3A2D37289 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26F9F1D98D047573C43429B2 /* Pods-SwiftDecimalNumber.debug.xcconfig */,
+				5B85BA0FB19F393ED3E9BE67 /* Pods-SwiftDecimalNumber.release.xcconfig */,
+				AE44463B77AD8FC2E522D5AD /* Pods-SwiftDecimalNumberTests.debug.xcconfig */,
+				347BB95EFCFB34AA2879583D /* Pods-SwiftDecimalNumberTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -105,7 +134,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F0970A1C8983DF0070D6CF /* SwiftDecimalNumber.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,10 +144,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17F0971A1C8983DF0070D6CF /* Build configuration list for PBXNativeTarget "SwiftDecimalNumber" */;
 			buildPhases = (
+				1A46523EB03A39E5D2FD9C95 /* [CP] Check Pods Manifest.lock */,
 				17F097011C8983DF0070D6CF /* Sources */,
 				17F097021C8983DF0070D6CF /* Frameworks */,
 				17F097031C8983DF0070D6CF /* Headers */,
 				17F097041C8983DF0070D6CF /* Resources */,
+				14FEA220E277CF89C696F447 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,9 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 17F0971D1C8983DF0070D6CF /* Build configuration list for PBXNativeTarget "SwiftDecimalNumberTests" */;
 			buildPhases = (
+				4EC751A78A8758EAC4CC4501 /* [CP] Check Pods Manifest.lock */,
 				17F0970C1C8983DF0070D6CF /* Sources */,
 				17F0970D1C8983DF0070D6CF /* Frameworks */,
 				17F0970E1C8983DF0070D6CF /* Resources */,
+				16FE137667769084EB60E164 /* [CP] Embed Pods Frameworks */,
+				2CD4E8AB5D5747FE2F865CF6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,16 +188,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Superwatermelon Limited";
 				TargetAttributes = {
 					17F097051C8983DF0070D6CF = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 4Y4NY54RDF;
+						LastSwiftMigration = 0800;
 					};
 					17F0970F1C8983DF0070D6CF = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = 4Y4NY54RDF;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -205,6 +240,84 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14FEA220E277CF89C696F447 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDecimalNumber/Pods-SwiftDecimalNumber-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16FE137667769084EB60E164 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDecimalNumberTests/Pods-SwiftDecimalNumberTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A46523EB03A39E5D2FD9C95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2CD4E8AB5D5747FE2F865CF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftDecimalNumberTests/Pods-SwiftDecimalNumberTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4EC751A78A8758EAC4CC4501 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		17F097011C8983DF0070D6CF /* Sources */ = {
@@ -247,8 +360,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -295,8 +410,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -316,6 +433,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -325,8 +443,10 @@
 		};
 		17F0971B1C8983DF0070D6CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26F9F1D98D047573C43429B2 /* Pods-SwiftDecimalNumber.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -338,13 +458,16 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		17F0971C1C8983DF0070D6CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B85BA0FB19F393ED3E9BE67 /* Pods-SwiftDecimalNumber.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -355,26 +478,31 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.swift.SwiftDecimalNumber;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		17F0971E1C8983DF0070D6CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE44463B77AD8FC2E522D5AD /* Pods-SwiftDecimalNumberTests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwiftDecimalNumberTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.swift.SwiftDecimalNumberTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		17F0971F1C8983DF0070D6CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 347BB95EFCFB34AA2879583D /* Pods-SwiftDecimalNumberTests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = SwiftDecimalNumberTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.swift.SwiftDecimalNumberTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

@@ -10,40 +10,69 @@ import Foundation
 
 extension NSDecimalNumber: Comparable {}
 
+/**
+    Performs equality comparison between two NSDecimalNumber values.
+ 
+    @param left The first NSDecimalNumber value to compare.
+    @param right The second NSDecimalNumber value to compare.
+ 
+    @return The result as a boolean, true the two were equal, false otherwise.
+*/
 public func == (left: NSDecimalNumber, right: NSDecimalNumber) -> Bool {
-    return left.compare(right) == .OrderedSame
+    return left.compare(right) == .orderedSame
 }
 
 public func < (left: NSDecimalNumber, right: NSDecimalNumber) -> Bool {
-    return left.compare(right) == .OrderedAscending
+    return left.compare(right) == .orderedAscending
 }
 
 public func + (left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
-    return left.decimalNumberByAdding(right)
+    return left.adding(right)
 }
 
 public func - (left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
-    return left.decimalNumberBySubtracting(right)
+    return left.subtracting(right)
 }
 
 public func * (left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
-    return left.decimalNumberByMultiplyingBy(right)
+    return left.multiplying(by: right)
 }
 
 public func / (left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
-    return left.decimalNumberByDividingBy(right)
+    return left.dividing(by: right)
 }
 
-infix operator ** { associativity left precedence 200 }
+precedencegroup ExponentiativePrecedence {
+    associativity: left
+    higherThan: MultiplicationPrecedence
+}
+
+infix operator ** : ExponentiativePrecedence
 
 public func ** (left: NSDecimalNumber, right: Int) -> NSDecimalNumber {
-    return left.decimalNumberByRaisingToPower(right)
+    return left.raising(toPower: right)
 }
 
-public func min(left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
+/**
+    Returns the minimum of two NSDecimalNumber values passed.
+ 
+    @param left The first NSDecimalNumber value to compare.
+    @param right The second NSDecimalNumber value to compare.
+ 
+    @return The smaller of the two NSDecimalNumber values.
+*/
+public func min(_ left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
     return left < right ? left : right
 }
 
-public func max(left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
+/**
+    Returns the maximum of two NSDecimalNumber values passed.
+ 
+    @param left The first NSDecimalNumber value to compare.
+    @param right The second NSDecimalNumber value to compare.
+ 
+    @return The larger of the two NSDecimalNumber values.
+*/
+public func max(_ left: NSDecimalNumber, right: NSDecimalNumber) -> NSDecimalNumber {
     return left > right ? left : right
 }
