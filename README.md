@@ -1,4 +1,8 @@
 # SwiftDecimalNumber
+##### Arithmetic operators for decimal numbers
+By [Stuart Wakefield](http://stuartwakefield.co.uk)
+
+![Travis CI Build](https://travis-ci.org/superwatermelon/SwiftDecimalNumber.svg?branch=master)
 
 Provides extensions to `NSDecimalNumber` to support arithmetic operations:
 
