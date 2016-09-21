@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name = "SwiftDecimalNumber"
 
-  s.version = "1.0.0-alpha"
+  s.version = "1.0.1-alpha"
 
   s.summary = "Swift extensions for NSDecimalNumber."
 
