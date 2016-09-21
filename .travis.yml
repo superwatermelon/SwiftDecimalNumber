@@ -14,4 +14,4 @@ script:
   - bundle exec pod lib lint
   - bundle exec pod spec lint
 after_success:
-  - bundle exec pod trunk push SwiftDecimalNumber.podspec
+  - [ "$(git rev-parse --abbrev-ref HEAD)" = "deploy" ] && bundle exec pod trunk push SwiftDecimalNumber.podspec
