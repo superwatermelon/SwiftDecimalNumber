@@ -2,7 +2,15 @@
 ##### Arithmetic operators for decimal numbers
 By [Stuart Wakefield](http://stuartwakefield.co.uk)
 
-![Travis CI Build](https://travis-ci.org/superwatermelon/SwiftDecimalNumber.svg?branch=master)
+[![Travis CI Build](https://travis-ci.org/superwatermelon/SwiftDecimalNumber.svg?branch=master)][ci]
+
+- [Introduction]
+- [API]
+  - [Comparisons]
+  - [Arithmetic]
+  - [Functions]
+
+## Introduction
 
 Provides extensions to `NSDecimalNumber` to support arithmetic operations:
 
@@ -52,3 +60,11 @@ implementation details, will return true if result is
 
 [nsdecimalnumber-compare]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Classes/NSDecimalNumber_Class/#//apple_ref/occ/instm/NSDecimalNumber/compare:
 [nscomparisonresult-orderedsame]: https://developer.apple.com/library/mac/documentation/Cocoa/Reference/Foundation/Miscellaneous/Foundation_Constants/index.html#//apple_ref/swift/enum/c:@E@NSComparisonResult
+
+[ci]: https://travis-ci.org/superwatermelon/SwiftDecimalNumber
+
+[Introduction]: #introduction
+[API]: #api
+[Comparisons]: #comparisons
+[Arithmetic]: #arithmetic
+[Functions]: #functions
