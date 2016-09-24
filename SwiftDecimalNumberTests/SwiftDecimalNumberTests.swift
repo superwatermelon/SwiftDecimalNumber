@@ -20,6 +20,15 @@ class SwiftDecimalNumberTests: XCTestCase {
 
     }
 
+    func testEqualityWhenEqualInValueButNotPrecision() {
+        
+        let a = NSDecimalNumber(string: "1.5")
+        let b = NSDecimalNumber(string: "1.5000")
+        
+        XCTAssertTrue(a == b)
+        
+    }
+    
     func testEqualityWhenNotEqual() {
 
         let a = NSDecimalNumber(string: "10000")
@@ -123,7 +132,7 @@ class SwiftDecimalNumberTests: XCTestCase {
         let b = NSDecimalNumber(string: "4999.99")
         let c = NSDecimalNumber(string: "0.01")
 
-        XCTAssertEqual((a as Decimal) - (b as Decimal), c as Decimal)
+        XCTAssertEqual(a - b, c)
     }
 
     func testMultiplication() {
@@ -133,7 +142,7 @@ class SwiftDecimalNumberTests: XCTestCase {
         let c = NSDecimalNumber(string: "0.01")
 
 
-        XCTAssertEqual((a as Decimal) * (b as Decimal), c as Decimal)
+        XCTAssertEqual(a * b, c)
 
     }
 
@@ -143,7 +152,7 @@ class SwiftDecimalNumberTests: XCTestCase {
         let b = NSDecimalNumber(string: "0.5")
         let c = NSDecimalNumber(string: "0.4")
 
-        XCTAssertEqual((a as Decimal) / (b as Decimal), c as Decimal)
+        XCTAssertEqual(a / b, c)
 
     }
 
