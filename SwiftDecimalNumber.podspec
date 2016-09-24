@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
   s.name = "SwiftDecimalNumber"
 
-  s.version = "1.0.2"
+  s.version = "1.0.3"
 
   s.summary = "Swift extensions for NSDecimalNumber."
 
@@ -23,8 +23,8 @@ Pod::Spec.new do |s|
     :tag => s.version.to_s
   }
 
-  s.platform = :ios, '9.3'
+  s.platform = :ios, '9.2'
 
-  s.source_files = 'SwiftDecimalNumber/**/*'
+  s.source_files = 'Sources/**/*.swift'
 
 end
