@@ -12,9 +12,6 @@
 		17164C501D96C6EA001757C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17164C4E1D96C6EA001757C0 /* Info.plist */; };
 		17164C521D96C726001757C0 /* SwiftDecimalNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17164C4F1D96C6EA001757C0 /* SwiftDecimalNumberTests.swift */; };
 		17F097111C8983DF0070D6CF /* SwiftDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F097061C8983DF0070D6CF /* SwiftDecimalNumber.framework */; };
-		17F097211C89842F0070D6CF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 17F097201C89842F0070D6CF /* Podfile */; };
-		17F097251C8A34900070D6CF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 17F097241C8A34900070D6CF /* LICENSE */; };
-		17F097271C8A34A20070D6CF /* SwiftDecimalNumber.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */; };
 		8F96F865A9C3932516BA9A96 /* Pods_SwiftDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E7E402D6879DEFA63DB348 /* Pods_SwiftDecimalNumber.framework */; };
 		E33583AA4CCBD32295556B16 /* Pods_SwiftDecimalNumberTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E92016D99BB1DFA3BEEC8BC8 /* Pods_SwiftDecimalNumberTests.framework */; };
 /* End PBXBuildFile section */
@@ -36,9 +33,6 @@
 		17164C4F1D96C6EA001757C0 /* SwiftDecimalNumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftDecimalNumberTests.swift; path = Tests/SwiftDecimalNumberTests.swift; sourceTree = "<group>"; };
 		17F097061C8983DF0070D6CF /* SwiftDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17F097101C8983DF0070D6CF /* SwiftDecimalNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDecimalNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17F097201C89842F0070D6CF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		17F097241C8A34900070D6CF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftDecimalNumber.podspec; sourceTree = "<group>"; };
 		26F9F1D98D047573C43429B2 /* Pods-SwiftDecimalNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecimalNumber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDecimalNumber/Pods-SwiftDecimalNumber.debug.xcconfig"; sourceTree = "<group>"; };
 		347BB95EFCFB34AA2879583D /* Pods-SwiftDecimalNumberTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecimalNumberTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDecimalNumberTests/Pods-SwiftDecimalNumberTests.release.xcconfig"; sourceTree = "<group>"; };
 		37E7E402D6879DEFA63DB348 /* Pods_SwiftDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,9 +85,6 @@
 			children = (
 				17164C4D1D96C6DA001757C0 /* Tests */,
 				17164C4C1D96C6CF001757C0 /* Sources */,
-				17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */,
-				17F097241C8A34900070D6CF /* LICENSE */,
-				17F097201C89842F0070D6CF /* Podfile */,
 				17F097071C8983DF0070D6CF /* Products */,
 				613C34ECE6019BF3A2D37289 /* Pods */,
 				45D93D23D2711FEF10ED2970 /* Frameworks */,
@@ -229,10 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17164C4A1D96C6CB001757C0 /* Info.plist in Resources */,
-				17F097251C8A34900070D6CF /* LICENSE in Resources */,
-				17F097271C8A34A20070D6CF /* SwiftDecimalNumber.podspec in Resources */,
 				17164C501D96C6EA001757C0 /* Info.plist in Resources */,
-				17F097211C89842F0070D6CF /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
