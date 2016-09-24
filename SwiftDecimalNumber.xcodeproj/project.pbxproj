@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17164C4A1D96C6CB001757C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17164C481D96C6CB001757C0 /* Info.plist */; };
+		17164C4B1D96C6CB001757C0 /* SwiftDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17164C491D96C6CB001757C0 /* SwiftDecimalNumber.swift */; };
+		17164C501D96C6EA001757C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 17164C4E1D96C6EA001757C0 /* Info.plist */; };
+		17164C521D96C726001757C0 /* SwiftDecimalNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17164C4F1D96C6EA001757C0 /* SwiftDecimalNumberTests.swift */; };
 		17F097111C8983DF0070D6CF /* SwiftDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17F097061C8983DF0070D6CF /* SwiftDecimalNumber.framework */; };
-		17F097161C8983DF0070D6CF /* SwiftDecimalNumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F097151C8983DF0070D6CF /* SwiftDecimalNumberTests.swift */; };
 		17F097211C89842F0070D6CF /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 17F097201C89842F0070D6CF /* Podfile */; };
-		17F097231C8984670070D6CF /* SwiftDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */; };
 		17F097251C8A34900070D6CF /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 17F097241C8A34900070D6CF /* LICENSE */; };
 		17F097271C8A34A20070D6CF /* SwiftDecimalNumber.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */; };
 		8F96F865A9C3932516BA9A96 /* Pods_SwiftDecimalNumber.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E7E402D6879DEFA63DB348 /* Pods_SwiftDecimalNumber.framework */; };
@@ -28,13 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		17164C481D96C6CB001757C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Sources/Info.plist; sourceTree = "<group>"; };
+		17164C491D96C6CB001757C0 /* SwiftDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftDecimalNumber.swift; path = Sources/SwiftDecimalNumber.swift; sourceTree = "<group>"; };
+		17164C4E1D96C6EA001757C0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Tests/Info.plist; sourceTree = "<group>"; };
+		17164C4F1D96C6EA001757C0 /* SwiftDecimalNumberTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftDecimalNumberTests.swift; path = Tests/SwiftDecimalNumberTests.swift; sourceTree = "<group>"; };
 		17F097061C8983DF0070D6CF /* SwiftDecimalNumber.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDecimalNumber.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		17F0970B1C8983DF0070D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17F097101C8983DF0070D6CF /* SwiftDecimalNumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDecimalNumberTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		17F097151C8983DF0070D6CF /* SwiftDecimalNumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDecimalNumberTests.swift; sourceTree = "<group>"; };
-		17F097171C8983DF0070D6CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17F097201C89842F0070D6CF /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDecimalNumber.swift; sourceTree = "<group>"; };
 		17F097241C8A34900070D6CF /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SwiftDecimalNumber.podspec; sourceTree = "<group>"; };
 		26F9F1D98D047573C43429B2 /* Pods-SwiftDecimalNumber.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftDecimalNumber.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftDecimalNumber/Pods-SwiftDecimalNumber.debug.xcconfig"; sourceTree = "<group>"; };
@@ -66,14 +68,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		17164C4C1D96C6CF001757C0 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				17164C481D96C6CB001757C0 /* Info.plist */,
+				17164C491D96C6CB001757C0 /* SwiftDecimalNumber.swift */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		17164C4D1D96C6DA001757C0 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				17164C4E1D96C6EA001757C0 /* Info.plist */,
+				17164C4F1D96C6EA001757C0 /* SwiftDecimalNumberTests.swift */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
 		17F096FC1C8983DF0070D6CF = {
 			isa = PBXGroup;
 			children = (
+				17164C4D1D96C6DA001757C0 /* Tests */,
+				17164C4C1D96C6CF001757C0 /* Sources */,
 				17F097261C8A34A20070D6CF /* SwiftDecimalNumber.podspec */,
 				17F097241C8A34900070D6CF /* LICENSE */,
 				17F097201C89842F0070D6CF /* Podfile */,
-				17F097081C8983DF0070D6CF /* SwiftDecimalNumber */,
-				17F097141C8983DF0070D6CF /* SwiftDecimalNumberTests */,
 				17F097071C8983DF0070D6CF /* Products */,
 				613C34ECE6019BF3A2D37289 /* Pods */,
 				45D93D23D2711FEF10ED2970 /* Frameworks */,
@@ -87,24 +107,6 @@
 				17F097101C8983DF0070D6CF /* SwiftDecimalNumberTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		17F097081C8983DF0070D6CF /* SwiftDecimalNumber */ = {
-			isa = PBXGroup;
-			children = (
-				17F097221C8984670070D6CF /* SwiftDecimalNumber.swift */,
-				17F0970B1C8983DF0070D6CF /* Info.plist */,
-			);
-			path = SwiftDecimalNumber;
-			sourceTree = "<group>";
-		};
-		17F097141C8983DF0070D6CF /* SwiftDecimalNumberTests */ = {
-			isa = PBXGroup;
-			children = (
-				17F097151C8983DF0070D6CF /* SwiftDecimalNumberTests.swift */,
-				17F097171C8983DF0070D6CF /* Info.plist */,
-			);
-			path = SwiftDecimalNumberTests;
 			sourceTree = "<group>";
 		};
 		45D93D23D2711FEF10ED2970 /* Frameworks */ = {
@@ -226,8 +228,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17164C4A1D96C6CB001757C0 /* Info.plist in Resources */,
 				17F097251C8A34900070D6CF /* LICENSE in Resources */,
 				17F097271C8A34A20070D6CF /* SwiftDecimalNumber.podspec in Resources */,
+				17164C501D96C6EA001757C0 /* Info.plist in Resources */,
 				17F097211C89842F0070D6CF /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +288,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		2CD4E8AB5D5747FE2F865CF6 /* [CP] Copy Pods Resources */ = {
@@ -314,7 +318,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -324,7 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F097231C8984670070D6CF /* SwiftDecimalNumber.swift in Sources */,
+				17164C4B1D96C6CB001757C0 /* SwiftDecimalNumber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17F097161C8983DF0070D6CF /* SwiftDecimalNumberTests.swift in Sources */,
+				17164C521D96C726001757C0 /* SwiftDecimalNumberTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,7 +455,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftDecimalNumber/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.swift.SwiftDecimalNumber;
@@ -472,7 +476,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftDecimalNumber/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.swift.SwiftDecimalNumber;
@@ -486,7 +490,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AE44463B77AD8FC2E522D5AD /* Pods-SwiftDecimalNumberTests.debug.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = SwiftDecimalNumberTests/Info.plist;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.swift.SwiftDecimalNumberTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,7 +503,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 347BB95EFCFB34AA2879583D /* Pods-SwiftDecimalNumberTests.release.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = SwiftDecimalNumberTests/Info.plist;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.superwatermelon.swift.SwiftDecimalNumberTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
