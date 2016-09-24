@@ -9,6 +9,7 @@ before_install:
   - gem install bundler
 install:
   - bundle
+  - bundle exec pod repo update
   - bundle exec pod install
 script:
   - xcodebuild test -workspace SwiftDecimalNumber.xcworkspace -scheme SwiftDecimalNumber -destination 'name=iPhone 6'
