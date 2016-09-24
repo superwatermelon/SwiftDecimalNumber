@@ -25,6 +25,6 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, '9.2'
 
-  s.source_files = ['Package.swift', 'Sources/**/*.swift']
+  s.source_files = 'Sources/**/*.swift'
 
 end
